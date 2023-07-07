@@ -1,16 +1,38 @@
-# curie
+# Google Play payment demo
 
-A new Flutter project.
+A Flutter project to to replicate Google Pay payment flow. 
 
-## Getting Started
+## Dependencies
 
-This project is a starting point for a Flutter application.
+The project makes use of the following open source packages
 
-A few resources to get you started if this is your first Flutter project:
+- [font_awesome_flutter](https://pub.dev/packages/font_awesome_flutter) - Font Awesome provides a great set of Icon to use in your application.
+- [flutter_bloc](https://pub.dev/packages/flutter_bloc) - for state management demo.
+- [lottie](https://pub.dev/packages/lottie) - To add lottie animation to the application.
+- [show_up_animation](https://pub.dev/packages/show_up_animation) - For easy implementation of a common slide and fade animation.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Build and run locally
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Clone the repo 
+ 
+```
+git clone https://github.com/thecodepapaya/google_pay_demo.git
+```
+
+Build and run locally 
+```
+cd google_pay_demo
+flutter run
+```
+## Demo
+
+<video width="320" height="240" controls>
+  <source src="https://github.com/thecodepapaya/google_pay_demo/assets/42690541/77a1a51a-a10a-4a54-af50-aebf46cfda5d" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+## Releases
+
+Checkout the [releases section](https://github.com/thecodepapaya/google_pay_demo/releases/latest) for the latest APK from the code.
+
+
