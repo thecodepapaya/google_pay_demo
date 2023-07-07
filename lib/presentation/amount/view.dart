@@ -39,20 +39,14 @@ class AmountPage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: const [
-                _Avatar(
-                  url:
-                      'https://img.freepik.com/free-photo/human-face-expressions-emotions-positive-joyful-young-beautiful-female-with-fair-straight-hair-casual-clothing_176420-15188.jpg?w=100',
-                ),
+                _Avatar(url: 'assets/human.jpeg'),
                 SizedBox(width: 3),
                 Icon(
                   Icons.chevron_right,
                   color: Colors.white,
                 ),
                 SizedBox(width: 3),
-                _Avatar(
-                  url:
-                      'https://play-lh.googleusercontent.com/pOhc9TAENgN1MXuU42s6tiT7KCJ-PSl7zoSH9r_AfIx-rkfIOHNvJHanJPw-HBa09w',
-                ),
+                _Avatar(url: 'assets/redbus.jpeg'),
               ],
             ),
             const SizedBox(height: 12),
