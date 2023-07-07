@@ -26,10 +26,8 @@ flutter run
 ```
 ## Demo
 
-<video width="320" height="240" controls>
-  <source src="https://github.com/thecodepapaya/google_pay_demo/assets/42690541/77a1a51a-a10a-4a54-af50-aebf46cfda5d" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+https://github.com/thecodepapaya/google_pay_demo/assets/42690541/ba305100-bf02-4e05-82e1-35589c59a171
+
 
 ## Releases
 
