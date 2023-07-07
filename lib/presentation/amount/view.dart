@@ -35,7 +35,7 @@ class AmountPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            const SizedBox(height: 50),
+            const Expanded(child: SizedBox()),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: const [
@@ -81,6 +81,7 @@ class AmountPage extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
+            const SizedBox(height: 8),
             const Expanded(child: SizedBox()),
             const _BottomSheet(),
           ],
