@@ -1,7 +1,7 @@
 part of '../view.dart';
 
 class _BottomSheet extends StatelessWidget {
-  const _BottomSheet({super.key});
+  const _BottomSheet();
 
   @override
   Widget build(BuildContext context) {
@@ -20,8 +20,8 @@ class _BottomSheet extends StatelessWidget {
           ),
           child: Column(
             children: [
-              Row(
-                children: const [
+              const Row(
+                children: [
                   FaIcon(
                     FontAwesomeIcons.moneyBill,
                     size: 26,

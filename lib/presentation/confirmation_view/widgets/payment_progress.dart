@@ -1,7 +1,7 @@
 part of '../view.dart';
 
 class _PaymentProgress extends StatelessWidget {
-  const _PaymentProgress({super.key});
+  const _PaymentProgress();
 
   @override
   Widget build(BuildContext context) {

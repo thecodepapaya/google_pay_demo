@@ -1,7 +1,7 @@
 part of '../view.dart';
 
 class _VisibilityToggle extends StatelessWidget {
-  const _VisibilityToggle({super.key});
+  const _VisibilityToggle();
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class _VisibilityToggle extends StatelessWidget {
             FaIcon(
               showPin ? Icons.visibility_rounded : Icons.visibility_off_rounded,
               size: 28,
-              color: Color(0xFF1c3587),
+              color: const Color(0xFF1c3587),
             ),
             const SizedBox(width: 8),
             const Text(

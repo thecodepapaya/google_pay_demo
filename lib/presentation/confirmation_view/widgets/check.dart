@@ -1,7 +1,7 @@
 part of '../view.dart';
 
 class _SuccessCheckMark extends StatelessWidget {
-  const _SuccessCheckMark({super.key});
+  const _SuccessCheckMark();
 
   @override
   Widget build(BuildContext context) {

@@ -1,7 +1,7 @@
 part of '../view.dart';
 
 class _Keyboard extends StatelessWidget {
-  const _Keyboard({super.key});
+  const _Keyboard();
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +34,7 @@ class _Keyboard extends StatelessWidget {
 class _KeyboardNumber extends StatelessWidget {
   final String number;
 
-  const _KeyboardNumber({super.key, required this.number});
+  const _KeyboardNumber({required this.number});
 
   @override
   Widget build(BuildContext context) {
@@ -61,7 +61,7 @@ class _KeyboardNumber extends StatelessWidget {
 }
 
 class _KeyboardBackspace extends StatelessWidget {
-  const _KeyboardBackspace({super.key});
+  const _KeyboardBackspace();
 
   @override
   Widget build(BuildContext context) {
@@ -83,7 +83,7 @@ class _KeyboardBackspace extends StatelessWidget {
 }
 
 class _KeyboardProceed extends StatelessWidget {
-  const _KeyboardProceed({super.key});
+  const _KeyboardProceed();
 
   @override
   Widget build(BuildContext context) {

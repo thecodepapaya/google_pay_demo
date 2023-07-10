@@ -10,9 +10,9 @@ class StartPage extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            Navigator.of(context).push(MaterialPageRoute(builder: (_) => AmountPage()));
+            Navigator.of(context).push(MaterialPageRoute(builder: (_) => const AmountPage()));
           },
-          child: Text('Start Demo'),
+          child: const Text('Start Demo'),
         ),
       ),
     );

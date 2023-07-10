@@ -1,7 +1,7 @@
 part of '../view.dart';
 
 class _AmountFormField extends StatelessWidget {
-  const _AmountFormField({super.key});
+  const _AmountFormField();
 
   @override
   Widget build(BuildContext context) {

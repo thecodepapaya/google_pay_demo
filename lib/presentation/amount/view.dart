@@ -31,14 +31,14 @@ class AmountPage extends StatelessWidget {
             ),
           ],
         ),
-        body: Column(
+        body: const Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            const Expanded(child: SizedBox()),
+            Expanded(child: SizedBox()),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
+              children: [
                 _Avatar(url: 'assets/human.jpeg'),
                 SizedBox(width: 3),
                 Icon(
@@ -49,35 +49,35 @@ class AmountPage extends StatelessWidget {
                 _Avatar(url: 'assets/redbus.jpeg'),
               ],
             ),
-            const SizedBox(height: 12),
-            const Text(
+            SizedBox(height: 12),
+            Text(
               'Payment to Red bus',
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.white,
               ),
             ),
-            const SizedBox(height: 4),
-            const Text(
+            SizedBox(height: 4),
+            Text(
               '(redbus@oksbi)',
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.white,
               ),
             ),
-            const SizedBox(height: 50),
-            const _AmountFormField(),
-            const SizedBox(height: 8),
-            const Text(
+            SizedBox(height: 50),
+            _AmountFormField(),
+            SizedBox(height: 8),
+            Text(
               'Payment via Billdesk',
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.white,
               ),
             ),
-            const SizedBox(height: 8),
-            const Expanded(child: SizedBox()),
-            const _BottomSheet(),
+            SizedBox(height: 8),
+            Expanded(child: SizedBox()),
+            _BottomSheet(),
           ],
         ),
       ),

@@ -3,7 +3,7 @@ part of '../view.dart';
 class _UpiPin extends StatelessWidget {
   final int pinLength;
 
-  const _UpiPin({super.key, required this.pinLength});
+  const _UpiPin({required this.pinLength});
 
   @override
   Widget build(BuildContext context) {
@@ -16,10 +16,10 @@ class _UpiPin extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 20),
+              const Padding(
+                padding: EdgeInsets.symmetric(vertical: 20),
                 child: Row(
-                  children: const [
+                  children: [
                     Text(
                       'ENTER UPI PIN',
                       style: TextStyle(
@@ -59,7 +59,6 @@ class _Pin extends StatelessWidget {
   final bool showPin;
 
   const _Pin({
-    super.key,
     required this.pin,
     required this.maxPinLength,
     required this.showPin,
@@ -110,7 +109,6 @@ class _Dashes extends StatelessWidget {
   final int pinLength;
 
   const _Dashes({
-    super.key,
     required this.pinLength,
   });
 

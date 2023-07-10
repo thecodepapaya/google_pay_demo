@@ -1,4 +1,3 @@
-import 'dart:ui';
 
 import 'package:curie/app/app.dart';
 import 'package:curie/presentation/confirmation_view/view.dart';
@@ -44,7 +43,7 @@ class UPIConfirmationPage extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    const Text(
                       'Axis Bank',
                       style: TextStyle(
                         fontSize: 22,
@@ -85,9 +84,9 @@ class UPIConfirmationPage extends StatelessWidget {
                   color: Colors.white,
                   height: double.infinity,
                   width: double.infinity,
-                  child: Column(
+                  child: const Column(
                     mainAxisAlignment: MainAxisAlignment.start,
-                    children: const [
+                    children: [
                       SizedBox(height: 100),
                       _UpiPin(pinLength: pinLength),
                       Expanded(child: SizedBox()),

@@ -4,7 +4,6 @@ class _InfoBox extends StatelessWidget {
   final int amountPaid;
 
   const _InfoBox({
-    super.key,
     required this.amountPaid,
   });
 
