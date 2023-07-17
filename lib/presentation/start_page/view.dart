@@ -1,4 +1,5 @@
 import 'package:curie/presentation/amount/view.dart';
+import 'package:curie/shadow_button/homepage.dart';
 import 'package:flutter/material.dart';
 
 class StartPage extends StatelessWidget {
@@ -8,11 +9,23 @@ class StartPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.of(context).push(MaterialPageRoute(builder: (_) => const AmountPage()));
-          },
-          child: const Text('Start Demo'),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(builder: (_) => const AmountPage()));
+              },
+              child: const Text('Start GPay Demo'),
+            ),
+            const SizedBox(height: 30),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(builder: (_) => const ShadowButtonPage()));
+              },
+              child: const Text('Start Shadow Button Demo'),
+            ),
+          ],
         ),
       ),
     );

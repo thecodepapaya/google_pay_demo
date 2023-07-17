@@ -5,7 +5,7 @@ import 'presentation/start_page/view.dart';
 
 void main() {
   Bloc.observer = const AppBlocObserver();
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class AppBlocObserver extends BlocObserver {
@@ -29,9 +29,7 @@ class AppBlocObserver extends BlocObserver {
 }
 
 class MyApp extends StatelessWidget {
-  MyApp({super.key});
-
-  final GlobalKey<NavigatorState> _navigatorKey = GlobalKey();
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
