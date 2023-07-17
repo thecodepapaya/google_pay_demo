@@ -28,6 +28,9 @@ flutter run
 
 https://github.com/thecodepapaya/google_pay_demo/assets/42690541/ba305100-bf02-4e05-82e1-35589c59a171
 
+https://github.com/thecodepapaya/google_pay_demo/assets/42690541/4be10ea6-23b9-4709-803b-d0ab28fd081a
+
+
 
 ## Releases
 
