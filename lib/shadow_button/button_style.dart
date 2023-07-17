@@ -19,7 +19,7 @@ class _ShadowButtonState extends State<ShadowButton> with TickerProviderStateMix
 
     animationController = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 50),
+      duration: const Duration(milliseconds: 80),
     );
 
     final tween = Tween<double>(begin: 8, end: 0);
@@ -27,6 +27,10 @@ class _ShadowButtonState extends State<ShadowButton> with TickerProviderStateMix
     animation = tween.animate(curvedAnimation);
 
     animation.addListener(() {
+      if (animation.isCompleted) {
+        _animateRelease();
+      }
+
       setState(() {
         shadowOffset = animation.value;
       });
@@ -50,40 +54,34 @@ class _ShadowButtonState extends State<ShadowButton> with TickerProviderStateMix
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      behavior: HitTestBehavior.translucent,
-      onTap: _animatePress,
-      onTapDown: (_) => _animatePress(),
-      onTapUp: (_) => _animateRelease(),
-      onTapCancel: _animateRelease,
-      child: Padding(
-        padding: EdgeInsets.only(
-          bottom: shadowOffset,
-          right: shadowOffset,
-        ),
-        child: ShadowStyle(
-          borderRadius: 12,
-          offset: Offset(shadowOffset, shadowOffset),
-          child: ElevatedButton(
-            style: ButtonStyle(
-              side: const MaterialStatePropertyAll(
-                BorderSide(
-                  color: Colors.black,
-                  width: 2,
-                ),
-              ),
-              shape: MaterialStatePropertyAll<OutlinedBorder>(
-                RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12),
-                ),
-              ),
-              fixedSize: const MaterialStatePropertyAll<Size>(
-                Size(100, 54),
+    return Padding(
+      padding: EdgeInsets.only(
+        bottom: shadowOffset,
+        right: shadowOffset,
+      ),
+      child: ShadowStyle(
+        borderRadius: 12,
+        offset: Offset(shadowOffset, shadowOffset),
+        child: ElevatedButton(
+          style: ButtonStyle(
+            elevation: const MaterialStatePropertyAll(0),
+            side: const MaterialStatePropertyAll(
+              BorderSide(
+                color: Colors.black,
+                width: 2,
               ),
             ),
-            onPressed: () {},
-            child: const Text('Hello'),
+            shape: MaterialStatePropertyAll<OutlinedBorder>(
+              RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+            ),
+            fixedSize: const MaterialStatePropertyAll<Size>(
+              Size(100, 54),
+            ),
           ),
+          onPressed: _animatePress,
+          child: const Text('Hello'),
         ),
       ),
     );

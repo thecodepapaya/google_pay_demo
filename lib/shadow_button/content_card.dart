@@ -6,18 +6,21 @@ class ContentCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ShadowStyle(
-      child: SizedBox(
-        height: 200,
-        width: 320,
-        child: Container(
-          decoration: BoxDecoration(
-            border: Border.all(
-              color: Colors.black,
-              width: 2,
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 40),
+      child: ShadowStyle(
+        child: SizedBox(
+          height: 200,
+          width: 320,
+          child: Container(
+            decoration: BoxDecoration(
+              border: Border.all(
+                color: Colors.black,
+                width: 2,
+              ),
+              color: Colors.red,
+              borderRadius: BorderRadius.circular(20),
             ),
-            color: Colors.red,
-            borderRadius: BorderRadius.circular(20),
           ),
         ),
       ),

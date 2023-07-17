@@ -14,11 +14,11 @@ class DashCard extends StatelessWidget {
         ContentCard(),
         Positioned(
           right: 35,
-          bottom: -24,
+          bottom: 4,
           child: ShadowButton(),
         ),
         Positioned(
-          bottom: -24,
+          bottom: 4,
           right: 170,
           child: ShadowButton(),
         ),
